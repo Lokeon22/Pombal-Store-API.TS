@@ -13,6 +13,7 @@ const config: { [key: string]: Knex.Config } = {
     },
     migrations: {
       directory: resolve(__dirname, "src", "database", "knex", "migrations"),
+      loadExtensions: [".js"],
     },
     useNullAsDefault: true,
   },
